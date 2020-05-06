@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+}
+/* ------------------------------------ */
+/* -------------Reuseable-------------- */
+/* -------------------------------------- */
+.padding{
+    padding: 15px 300px 10px;
+}
+
+.h2{
+    font-size: 135%;
+    font-weight: 700;
+}
+/* ----------------------------------------------- */
+/* -----------------Header------------------------------ */
+/* ------------------------------------------------------- */
+.header{
+    background-color: #003580;
+}
+.logo{
+    height: 40px;
+    position: relative;
+    top: -5px;
+}
+.user_form{
+    float: right;
+}
+.row{
+    max-width: 1140px;
+    list-style: none;
+}
+.row li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.row li a{
+    text-decoration: none;
+}
+#list_property{
+    border: 2px solid #ffffff;
+    padding: 0px 7px 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border-radius: 6px;
+}
+#list_property:hover{
+    background-color:#3d77c8;
+}
+.top_btn{
+    font-weight: 700;
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 70px;
+    border-radius: 6px;
+}
+.top_btn:hover{
+    color: #07acff;
+}
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.find{
+    background-color: #f8efe4;
+    list-style: none;
+    text-decoration: none;
+}
+.find li{
+    height: 50px;
+    /* padding: 0px; */
+    /* margin: 0%; */
+}
+.find li input{
+    width: 100%;
+    height: 100%;
+    border:4px solid rgb(241, 184, 70);
+    font-size: 90%;
+    text-align: center;
+}
+.find li input[type=submit]{
+    background-color: #3ac5fb;
+    color: #ffffff;
+    font-weight: 700;
+}
