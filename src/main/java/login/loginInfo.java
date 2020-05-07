@@ -1,20 +1,20 @@
 package login;
 
-public class user {
+public class loginInfo {
     private String username;
     private String password;
 
-    public user() {
+    public loginInfo() {
         super();
     }
 
-    public user(String username, String password) {
+    public loginInfo(String username, String password) {
         super();
         this.username = username;
         this.password = password;
     }
 
-    public String getUsername() {
+    String getUsername() {
         return username;
     }
 
@@ -22,7 +22,7 @@ public class user {
         this.username = username;
     }
 
-    public String getPassword() {
+    String getPassword() {
         return password;
     }
 

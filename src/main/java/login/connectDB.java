@@ -2,7 +2,7 @@ package login;
 import java.sql.*;
 
 public class connectDB {
-    public boolean validate(user loginBean) throws ClassNotFoundException {
+    public boolean validate(loginInfo loginBean) throws ClassNotFoundException {
         boolean status = false;
 
         Class.forName("com.mysql.jdbc.Driver");
