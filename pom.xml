@@ -24,6 +24,12 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.webjars.npm/jquery-nice-select -->
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>jquery-nice-select</artifactId>
+            <version>1.1.0</version>
+        </dependency>
     </dependencies>
 
     
