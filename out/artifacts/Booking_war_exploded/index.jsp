@@ -1,6 +1,6 @@
 
 <%@ page
-		contentType="text/html;charset=UTF-8" language="" %>
+		contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 
 <html lang="">
@@ -23,7 +23,7 @@
 <header class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
 			<a href="#"><img class="logo" src="img/logo2.png" alt="logo"/></a>
-			<a class="btn btn-primary" href="#">Sign in</a>
+			<a class="btn btn-primary" href="sign-in.jsp">Sign in</a>
 		</div>
 </header>
 

@@ -201,3 +201,87 @@ input::-webkit-inner-spin-button {
 .best-chooses {
     margin: 50px 0;
 }
+
+
+/* --------------------------loginForm---------------------- */
+.box {
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("../img/Hero_Image1_22.jpg");
+    background-size: cover;
+    /*!* background: linear-gradient(to right top,rgba(42, 77, 105,),#63ace5); *!*/
+    min-height: 100vh;
+}
+
+.login-form {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.875);
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.login-form .submit {
+    display: block;
+    margin: 40px auto 100px;
+    background-color: rgb(99, 172, 229);
+    height: 40px;
+    width: 100px;
+}
+
+.login-form span {
+    display: block;
+    text-align: center;
+}
+
+.input-box {
+    margin: 20px auto;
+    width: 300px;
+    position: relative;
+}
+
+.input-effect {
+    display: block;
+    height: 50px;
+    width: 300px;
+}
+
+.input-effect:focus {
+    outline: none;
+}
+
+.input-effect {
+    border: 0;
+    padding: 7px 0;
+    border-bottom: 2px solid rgb(174, 174, 174);
+}
+
+.input-effect ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #3399FF;
+    transition: 0.4s;
+}
+
+.input-effect:focus ~ .focus-border {
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+
+.login-form h1 {
+    /* background-color: yellow; */
+    text-align: center;
+    margin-bottom: 80px;
+    font-weight: 700;
+}
+
+/* --------------------------endLoginForm---------------------- */
+
