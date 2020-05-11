@@ -16,7 +16,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_13_PREVIEW">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_13">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -33,5 +33,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:4.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.npm:jquery-nice-select:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.npm:jquery:3.0.0-rc1" level="project" />
+    <orderEntry type="library" name="bootstrap" level="application" />
   </component>
 </module>

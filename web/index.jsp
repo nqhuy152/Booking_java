@@ -162,7 +162,7 @@
 
 </footer>
 
-<script src="js/vendor/jquery-3.5.1.js"></script>
+<script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/jquery-ui.min.js"></script>
 <script src="js/vendor/jquery.nice-select.min.js"></script>
