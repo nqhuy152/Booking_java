@@ -7,7 +7,12 @@
         <element id="directory" name="classes">
           <element id="module-output" name="Booking" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.mariadb.jdbc:mariadb-java-client:2.6.0" />
+        </element>
       </element>
+      <element id="module-output" name="Booking" />
     </root>
   </artifact>
 </component>

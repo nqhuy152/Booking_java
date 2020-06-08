@@ -1,13 +1,10 @@
-
-.header{
-    background-color: #003580;
-}
-
-.logo {
+.navbar-brand img {
     height: 40px;
-    position: relative;
-    top: -5px;
 }
+body{
+    background-color: #f8f8f8!important;
+}
+
 
 /* --------------------
 	Reuse
@@ -23,32 +20,12 @@
 -----------------------*/
 
 .search-filter {
-    background-color: #f5f5f5;
-    width: 100%;
-}
-
-.check-form {
-    padding: 30px 48px 65px;
-    margin: 0 -50px;
-}
-
-.check-form:after {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #000000;
-    content: "";
-    opacity: 0.47;
+    background-color: #e7eff6;
 }
 
 .check-form .datepicker {
-    width: calc(19.3% - 19px);
-    float: left;
-    margin-right: 19px;
     background: #ffffff;
-    position: relative;
-    padding: 18px;
+    padding: 18px 29px;
 }
 
 .check-form .datepicker p {
@@ -72,27 +49,24 @@
     border-bottom: 1px solid #888888;
 }
 
-.check-form .datepicker img {
-    position: absolute;
-    right: 18px;
-    bottom: 33px;
+.check-form .datepicker input:focus {
+    outline: none;
 }
 
+/* .check-form .datepicker img {
+	position: absolute;
+	right: 18px;
+	bottom: 33px;
+} */
+
 .check-form .room-quantity {
-    width: calc(29% - 16px);
-    float: left;
-    margin-right: 16px;
     background: #ffffff;
-    padding: 18px 28px 18px 29px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 .check-form .room-quantity .single-quantity {
     display: inline-block;
-    margin-right: 30px;
-}
-
-.check-form .room-quantity .single-quantity.last {
-    margin-right: 0;
 }
 
 .check-form .room-quantity .single-quantity p {
@@ -111,7 +85,7 @@
 
 .check-form .room-quantity .single-quantity .pro-qty .qtybtn {
     float: left;
-    width: 15px;
+    width: 20%;
     text-align: center;
     cursor: pointer;
     display: block;
@@ -121,8 +95,8 @@
     line-height: 42px;
 }
 
-.check-form .room-quantity .single-quantity .pro-qty input {
-    width: 28px;
+.check-form .room-quantity .single-quantity .pro-qty input{
+    width: 60%;
     border: none;
     float: left;
     text-align: center;
@@ -132,15 +106,37 @@
     color: #081624;
     opacity: 0.25;
     letter-spacing: 0.4px;
-    margin-top: -2px;
+    /* margin-top: -2px; */
+}
+
+.check-form .room-quantity .single-quantity .pro-qty input:focus{
+    outline: none;
+}
+
+
+
+.roomNum {
+    width: 60%;
+    border: none;
+    border-bottom: solid 1px black;
+    float: left;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #081624;
+    opacity: 0.25;
+    letter-spacing: 0.4px;
+    /* margin-top: -2px; */
+}
+
+.roomNum:focus {
+    outline: none;
 }
 
 .check-form .room-selector {
-    width: calc(25% - 16px);
-    float: left;
-    margin-right: 16px;
     background: #ffffff;
-    padding: 18px 24px;
+    padding: 19px 24px;
 }
 
 .check-form .room-selector p {
@@ -152,7 +148,6 @@
 }
 
 .check-form .room-selector .nice-select {
-    background-color: transparent;
     border-radius: 0;
     border: none;
     padding-left: 0;
@@ -173,7 +168,6 @@
 
 .check-form .room-selector .nice-select .list {
     width: 100%;
-    margin-top: 1px;
 }
 
 .check-form .room-selector .nice-select:after {
@@ -181,14 +175,13 @@
 }
 
 .check-form button {
-    background: #F9AD81;
-    border: 1px solid #F9AD81;
+    background: #f9ad81;
+    border: 1px solid #f9ad81;
     font-size: 18px;
     color: #ffffff;
     padding: 43px 27px;
     cursor: pointer;
 }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -198,70 +191,71 @@ input::-webkit-inner-spin-button {
 /* --------------------------------------------- */
 /* ------------------------best-chooses-------------- */
 
-.best-chooses {
-    margin: 50px 0;
-}
+/*.best-chooses {*/
+/*    margin: 50px 0;*/
+/*}*/
 
 
 /* --------------------------loginForm---------------------- */
-.box {
-    width: 100%;
-    margin: 0 auto;
-    background-image: url("../img/Hero_Image1_22.jpg");
-    background-size: cover;
-    /*!* background: linear-gradient(to right top,rgba(42, 77, 105,),#63ace5); *!*/
+.bg-sea{
+    /*min-width: 100vh;*/
+    background-image: url("../img/Hero_Image1_22.jpg")!important;
+    background-size: cover!important;
     min-height: 100vh;
+}
+label i{
+    position: relative;
+    top: 43px;
+    left: 8px;
 }
 
 .login-form {
-    width: 400px;
     background-color: rgba(255, 255, 255, 0.875);
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 30px;
 }
 
-.login-form .submit {
+.form-submit {
     display: block;
-    margin: 40px auto 100px;
-    background-color: rgb(99, 172, 229);
-    height: 40px;
-    width: 100px;
+    background: #6dabe4;
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+    padding: 15px 39px;
+    border-radius: 5px;
+    margin: 30px auto 50px;
+    cursor: pointer;
 }
+.form-submit:hover {
+    background: #4292dc; }
 
 .login-form span {
     display: block;
     text-align: center;
 }
 
-.input-box {
-    margin: 20px auto;
-    width: 300px;
-    position: relative;
+.form-group {
+    position: relative !important;
+    margin-bottom: 0!important;
 }
 
-.input-effect {
-    display: block;
-    height: 50px;
-    width: 300px;
-}
 
-.input-effect:focus {
+.form-group input:focus, select:focus{
     outline: none;
 }
 
-.input-effect {
-    border: 0;
-    padding: 7px 0;
-    border-bottom: 2px solid rgb(174, 174, 174);
+.form-group input, select{
+    width: 100%;
+    height: 50px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 0px 30px;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
 }
 
-.input-effect ~ .focus-border {
+.form-group input~ .focus-border{
     position: absolute;
-    bottom: 0;
     left: 50%;
     width: 0;
     height: 2px;
@@ -269,19 +263,166 @@ input::-webkit-inner-spin-button {
     transition: 0.4s;
 }
 
-.input-effect:focus ~ .focus-border {
+.form-group input:focus ~ .focus-border{
     width: 100%;
     transition: 0.4s;
     left: 0;
 }
-
-
-.login-form h1 {
-    /* background-color: yellow; */
-    text-align: center;
-    margin-bottom: 80px;
-    font-weight: 700;
+.agree-term {
+    display: inline-block;
+    width: auto;
 }
 
+#avatar{
+    border: none;
+    /*font-size: 20px;*/
+}
 /* --------------------------endLoginForm---------------------- */
+/* ---------------------------review--------------- */
+.btn-grey{
+    background-color:#D8D8D8;
+    color:#FFF;
+}
+.rating-block{
+    background-color:#FAFAFA;
+    border:1px solid #EFEFEF;
+    padding:15px 15px 20px 15px;
+    border-radius:3px;
+}
+.bold{
+    font-weight:700;
+}
+.padding-bottom-7{
+    padding-bottom:7px;
+}
 
+.review-block{
+    background-color:#FAFAFA;
+    border:1px solid #EFEFEF;
+    padding:15px;
+    border-radius:3px;
+    margin-bottom:15px;
+}
+.review-block-name{
+    font-size:12px;
+    margin:10px 0;
+}
+.review-block-date{
+    font-size:12px;
+}
+.review-block-rate{
+    font-size:13px;
+    margin-bottom:15px;
+}
+.review-block-title{
+    font-size:15px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+.review-block-description{
+    font-size:13px;
+}
+
+/* ----------------------------------profile---------------- */
+/* body{
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+} */
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    width: 80%;
+    height: 300px;
+    border-radius: 50%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+    width: 80%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #0062cc;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+.proile-rating{
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+}
+.limit-text{
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
